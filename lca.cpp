@@ -82,7 +82,7 @@ Tree* CreateBst(vector<int> nums, int n)
  * @param {number} n - The number of elements in the array.
  * @returns {Tree|null} - The root of the constructed BST or null if the array is empty.
  */
-
+// desired function 
 Tree* commonancestor(Tree* root, Tree* p , Tree* q)
 {
     if (root == NULL)
