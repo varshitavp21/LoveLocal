@@ -92,6 +92,7 @@ int binomialCoeff(int n, int k)
  * @returns {vector<vector<int>>} - Two-dimensional vector representing Pascal's Triangle.
  */
 
+// desired function
 vector<vector<int>> pascaltrianle(int numRows) {
  
     vector<vector<int>> ans;
