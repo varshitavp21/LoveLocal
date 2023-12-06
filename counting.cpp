@@ -75,7 +75,7 @@ int countingnumberofones(int n)
  * @param {number} n - The input number.
  * @returns {number} - The count of occurrences of the digit '1'.
  */
-
+// desired function
 int countingone(int n)
 {
     int count =0;
