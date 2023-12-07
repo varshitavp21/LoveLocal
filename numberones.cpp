@@ -41,7 +41,7 @@ int largestnumberof1s(vector<vector<int>>& matrix)
 
     vector<vector<int>> v(r, vector<int>(c, 0));
     int ans = 0;
-
+// nested loop to iterate to the ele of the matrix.
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
