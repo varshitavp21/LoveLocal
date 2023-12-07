@@ -54,6 +54,9 @@ using namespace std;
  * @returns {void}
  */
 
+// r = s+"#"+ reverse(s)  , the vector is used to find  the index of the largest palindrominc substring
+// and then reverse the remaining substring and add it at the begining of the string.
+
 void mainfunc(vector<int> &v,string r)
 {
     int i=0;
