@@ -28,7 +28,7 @@ using namespace std;
     */
 
 
-// 
+// N is the size of the vector, K = size of the window
 vector<int> maxsize(vector<int> nums, int N, int K)
 {
     vector<int> ans;
@@ -75,6 +75,8 @@ vector<int> maxsize(vector<int> nums, int N, int K)
 
 */
 
+
+// desired function 
 vector<int> slidingwindow(vector<int> nums, int k)
 {
     deque<int> d;
