@@ -60,7 +60,7 @@ Tree* LevelOrder(Tree* root, int data)
 	return root;
 }
 
-// constructing the bst from the level 
+// constructing the bst from the level order, n - size of the sorted array
 Tree* CreateBst(vector<int> nums, int n)
 {
 	if (n == 0)
@@ -82,7 +82,8 @@ Tree* CreateBst(vector<int> nums, int n)
  * @param {number} n - The number of elements in the array.
  * @returns {Tree|null} - The root of the constructed BST or null if the array is empty.
  */
-// desired function 
+
+// desired function to find the common ancestor between p and q.
 Tree* commonancestor(Tree* root, Tree* p , Tree* q)
 {
     if (root == NULL)
