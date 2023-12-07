@@ -36,6 +36,7 @@ using namespace std;
  * @returns {number} - The count of occurrences of the digit '1'.
  */
 
+// n - input taken ,temp is  a variable
 int countingnumberofones(int n)
 {
     int count=0;
