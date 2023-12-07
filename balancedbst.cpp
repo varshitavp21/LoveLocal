@@ -63,8 +63,8 @@ Tree* newNode(int data);
  * @param {number} h - The right index of the current subarray.
  * @returns {Tree|null} - The root of the constructed BST or null if the array is empty.
  */
-
-Tree* sortedArrayToBST(vector<int> nums, int l, int h)
+// function to convert the nums to height balanced bst based on approach.
+Tree* sortedArrayToheightBST(vector<int> nums, int l, int h)
 {
 	
 	if (l > h)
@@ -142,7 +142,8 @@ void printLevelOrder(Tree* root)
 
 
 
-// since the size of the arr is not defined so this function is used this take the input from the command line and 
+// since the size of the arr is not defined so this function is used this take the input from the command line and the number should be in the single line bcs
+// taken as string
 // converts it into vector
 
 
