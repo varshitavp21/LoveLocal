@@ -19,54 +19,6 @@ using namespace std;
         This is not the optimal solution 
     */
 
-
-// Approach 1 
-
-/**
- * Finds all numbers in the given array that occur more than n/3 times.
- *
- * @param {Array<number>} array - The input array of numbers.
- * @param {number} n - The length of the input array.
- * @returns {Array<number>} - An array containing numbers that occur more than n/3 times.
- */
-
-int binomialCoeff(int n, int k);
-
-
-
-// Function to generate Pascal's Triangle and store values in a 2D vector
-// Iterate through every line and populate the vector
- // Every line has number of integers equal to line number
-vector<vector<int>> generatePascal(int n)
-{
-    vector<vector<int>> pascalTriangle(n, vector<int>());
-
-    for (int line = 0; line < n; line++) {
-       
-        for (int i = 0; i <= line; i++) {
-            pascalTriangle[line].push_back(binomialCoeff(line, i));
-        }
-    }
-
-    return pascalTriangle;
-}
-
-
-// generating the each value of the triangle
-int binomialCoeff(int n, int k)
-{
-    int res = 1;
-    if (k > n - k)
-        k = n - k;
-    for (int i = 0; i < k; ++i) {
-        res *= (n - i);
-        res /= (i + 1);
-    }
-
-    return res;
-}
-
-
 /*
     Approach 2 :  if numRoms =3 
                                                                      1           i=0
@@ -81,6 +33,7 @@ int binomialCoeff(int n, int k)
             2.add the values and insert in the vector v and later the vector v is inserted in the 2d vector. 
 
             Time complexity : O(N^2)
+            Space Complexity : O(N)
 
 
 */            
