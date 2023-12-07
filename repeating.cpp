@@ -37,12 +37,12 @@ using namespace std;
 
 
 // reading the input and  forming the vector<int> integers
-vector<int> readIntegers() {
+vector<int> input() {
     vector<int> integers;
     string line;
 
    
-    getline(std::cin, line);
+    getline(cin, line);
 
     istringstream iss(line);
     int number;
@@ -90,7 +90,7 @@ int main()
 
 {
     vector<int> array;
-    array = readIntegers();
+    array = input();
 
     vector<int> ans;
 
